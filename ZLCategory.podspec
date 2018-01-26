@@ -21,11 +21,13 @@ Pod::Spec.new do |s|
 
   s.author             = { "陈昭良" => "295183917@qq.com" }
 
-  s.ios.frameworks = 'Foundation', 'UIKit'
-  s.osx.frameworks = 'Foundation', 'AppKit'
+  #s.ios.frameworks = 'Foundation', 'UIKit'
+  #s.osx.frameworks = 'Foundation', 'AppKit'
 
-  s.ios.deployment_target = "5.0"
-  s.osx.deployment_target = "10.7"
+  #s.ios.deployment_target = "5.0"
+  #s.osx.deployment_target = "10.7"
+
+  s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/czl0325/ZLCategory.git", :tag => "#{s.version}" }
 
