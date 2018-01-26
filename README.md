@@ -1,9 +1,9 @@
 # ZLCategory
 整合一些常用的category类
 
-
-制作cocoapod，
-可以使用 pod ZLCategory来导入
+ 
+支持cocoapod，
+可以使用 pod ZLCategory 来导入
 
 使用的时候可以导入总的头文件
 ```
