@@ -11,13 +11,13 @@
 
 #pragma mark date
 NSString *formatDateToString( NSDate *date ){
-    NSString *s = [NSString stringWithFormat:@"%04lu-%02lu-%02lu",
+    NSString *s = [NSString stringWithFormat:@"%04zd-%02zd-%02zd",
                    date.year,date.month,date.day];
     return s;
 }
 
 NSString *formatDateToStringALL( NSDate *date ){
-    NSString *s = [NSString stringWithFormat:@"%04lu-%02lu-%02lu %02lu:%02lu:%02lu",
+    NSString *s = [NSString stringWithFormat:@"%04zd-%02zd-%02zd %02zd:%02zd:%02zd",
                    date.year,date.month,date.day,date.hour,date.minute,date.seconds];
     return s;
 }
@@ -149,7 +149,7 @@ BOOL isSameDay(NSDate* date1, NSDate* date2) {
     return NO;
 }
 
-NSInteger minuteInterval(NSDate* fromDate, NSDate* toDate) {
+long minuteInterval(NSDate* fromDate, NSDate* toDate) {
     NSTimeInterval late1=[fromDate timeIntervalSince1970]*1;
     NSTimeInterval late2=[toDate timeIntervalSince1970]*1;
     NSTimeInterval cha=late2-late1;

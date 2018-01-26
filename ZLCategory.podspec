@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZLCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ZLCategory"
   s.description  = <<-DESC
   						整合的一些category类
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "陈昭良" => "295183917@qq.com" }
+  s.author       = { "陈昭良" => "295183917@qq.com" }
 
   #s.ios.frameworks = 'Foundation', 'UIKit'
   #s.osx.frameworks = 'Foundation', 'AppKit'

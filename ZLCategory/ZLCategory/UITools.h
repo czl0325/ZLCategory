@@ -70,7 +70,7 @@ BOOL isSameDay(NSDate* date1, NSDate* date2);
 /***
  * 计算两个时间点相距几分钟
  ***/
-NSInteger minuteInterval(NSDate* fromDate, NSDate* toDate);
+long minuteInterval(NSDate* fromDate, NSDate* toDate);
 /***
  * 创建一个uiimage，通过传入颜色，大小，以及透明度
  ***/
