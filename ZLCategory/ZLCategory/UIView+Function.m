@@ -301,7 +301,8 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center)
         animation.subtype = subtype;
     }
     //设置运动速度
-    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+    //animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
     [view.layer addAnimation:animation forKey:@"animation"];
 }
 
