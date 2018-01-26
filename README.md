@@ -6,13 +6,16 @@
 可以使用 pod ZLCategory来导入
 
 使用的时候可以导入总的头文件
+```
 #import "ZLCategory.h"
+```
 也可以按自己需要导入头文件
 
-文档：
+# 文档：
 
-NSDate+Function.h
+## NSDate+Function.h
 
+```
 // Relative dates from the current date
 + (NSDate *) dateTomorrow;
 + (NSDate *) dateYesterday;
@@ -87,10 +90,11 @@ NSDate+Function.h
  * 返回YES 或者 NO
  ***/
 - (BOOL)isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
+```
 
+## NSString+Function.h
 
-NSString+Function.h
-
+```
 /**< AES加密和解密 */
 -(NSString *) aes128_encrypt:(NSString *)key;
 -(NSString *) aes128_decrypt:(NSString *)key;
@@ -196,9 +200,11 @@ NSString+Function.h
 - (NSMutableArray *)stringCutout:(NSString *)value1 value2:(NSString *)value2;
 //过滤获得的匹配信息的下标
 - (int)indexByValue:(NSString *)str;
+```
 
-UIColor+Function.h
+## UIColor+Function.h
 
+```
 @interface UIColor (Function)
 /**
  *  传入红绿蓝返回UIColor
@@ -266,9 +272,11 @@ UIImage+Function.h
 - (UIImage *)imageByScalingProportionallyToSize:(CGSize)targetSize;
 
 @end
+```
 
-UINavigationController+Function.h
+## UINavigationController+Function.h
 
+```
 @interface UINavigationController (Function)
 
 //回退到指定页面
@@ -285,8 +293,11 @@ UISlider+Function.h
                          action: (SEL)action;
 
 @end
+```
 
-UITableView+Function.h
+## UITableView+Function.h
+
+```
 @interface UITableView (Function)
 
 //是否隐藏多余的cell
@@ -296,9 +307,11 @@ UITableView+Function.h
 - (void)tableViewDisplayWitMsg:(NSString *) message ifNecessaryForRowCount:(NSUInteger) rowCount;
 
 @end
+```
 
-UITools.h
+## UITools.h
 
+```
 /***
  * 将NSDate类型转化成NSString
  * 格式为:"2018-01-01"
@@ -374,9 +387,11 @@ UIImage *launchImageWithType(NSString *type);
  * 获取app的图标
  ***/
 UIImage *appIcon(void);
+```
 
-UIView+Function.h
+## UIView+Function.h
 
+```
 @property CGPoint origin;
 @property CGSize size;
 
@@ -436,3 +451,4 @@ UIView+Function.h
 - (void)lp_explode;
 
 @end
+```
