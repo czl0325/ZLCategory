@@ -285,9 +285,11 @@
 -(BOOL)popToViewController:(Class)vcClass;
 
 @end
+```
 
-UISlider+Function.h
+## UISlider+Function.h
 
+```
 @interface UISlider (Function)
 
 // 为UISlider添加单击事件
