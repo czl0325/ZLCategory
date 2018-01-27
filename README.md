@@ -224,9 +224,11 @@
  */
 + (UIColor *)colorWithHexString:(NSString *)color;
 @end
+```
 
-UIImage+Function.h
+## UIImage+Function.h
 
+```
 @interface UIImage (Function)
 
 //图片是否有alpha层
