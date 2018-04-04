@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/czl0325/ZLCategory"
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "陈昭良" => "295183917@qq.com" }
+  s.author       = { "陈昭良" => "295183917@qq.com" }
 
   #s.ios.frameworks = 'Foundation', 'UIKit'
   #s.osx.frameworks = 'Foundation', 'AppKit'

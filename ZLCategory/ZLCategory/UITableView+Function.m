@@ -7,6 +7,7 @@
 //
 
 #import "UITableView+Function.h"
+#import "UIView+Function.h"
 
 @implementation UITableView (Function)
 
@@ -19,6 +20,18 @@
         UIView *view = [UIView new];
         view.backgroundColor = [UIColor clearColor];
         [self setTableFooterView:view];
+    }
+}
+
+- (void)commonSetTableView {
+    self.estimatedRowHeight = 100;
+    self.estimatedSectionHeaderHeight = 0;
+    self.estimatedSectionFooterHeight = 0;
+    self.rowHeight=UITableViewAutomaticDimension;
+    if (@available(iOS 11.0, *)) {
+        self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.viewController.automaticallyAdjustsScrollViewInsets = NO;
     }
 }
 
