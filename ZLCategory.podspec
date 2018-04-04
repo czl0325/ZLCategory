@@ -9,10 +9,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZLCategory"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ZLCategory"
   s.description  = <<-DESC
-  						整合的一些category类
+  						整合的一些常用的category类
                    DESC
 
   s.homepage     = "https://github.com/czl0325/ZLCategory"
