@@ -26,4 +26,7 @@
  *  @return uicolor
  */
 + (UIColor *)colorWithHexString:(NSString *)color;
+
+- (UIImage *)createImageWithColor:(CGSize)size;
+
 @end
