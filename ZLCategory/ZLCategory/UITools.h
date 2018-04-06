@@ -86,7 +86,8 @@ UIImage *launchImageWithType(NSString *type);
  ***/
 UIImage *appIcon(void);
 
-
+//创建一个线条
+UIView* createView(UIColor* color);
 
 
 

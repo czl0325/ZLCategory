@@ -215,7 +215,11 @@ UIImage* appIcon() {
     return [UIImage imageNamed:icon];
 }
 
-
+UIView* createView(UIColor* color) {
+    UIView* line = [UIView new];
+    line.backgroundColor = color;
+    return line;
+}
 
 
 
