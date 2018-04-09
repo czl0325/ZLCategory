@@ -23,3 +23,8 @@
 #define SCREEN_MAX_WIDTH                [UIScreen mainScreen].bounds.size.width
 #define SCREEN_MAX_HEIGHT               [UIScreen mainScreen].bounds.size.height
 #define WeakSelf                        __weak typeof(self) weakSelf = self
+
+#define HomePath        NSHomeDirectory()
+#define DocumentsPath   ((NSString*)(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]))
+#define CachePath       ((NSString*)(NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]))
+#define tempPath        NSTemporaryDirectory();
