@@ -25,6 +25,7 @@
 		AD6007C7201B0BBB000191DE /* UITools.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6007B4201B0BBB000191DE /* UITools.m */; };
 		AD6007CB201B0BBB000191DE /* UIView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6007BC201B0BBB000191DE /* UIView+Function.m */; };
 		ADBF8F382074772E001E9DFF /* ZLMath.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBF8F362074772D001E9DFF /* ZLMath.m */; };
+		BEE175A2207FA4EE0091287C /* UIScrollView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE175A1207FA4EE0091287C /* UIScrollView+Function.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		AD6007D3201B1B45000191DE /* ZLCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLCategory.h; sourceTree = "<group>"; };
 		ADBF8F362074772D001E9DFF /* ZLMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLMath.m; sourceTree = "<group>"; };
 		ADBF8F372074772D001E9DFF /* ZLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLMath.h; sourceTree = "<group>"; };
+		BEE175A0207FA4EE0091287C /* UIScrollView+Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Function.h"; sourceTree = "<group>"; };
+		BEE175A1207FA4EE0091287C /* UIScrollView+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Function.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				AD6007B4201B0BBB000191DE /* UITools.m */,
 				AD6007BB201B0BBB000191DE /* UIView+Function.h */,
 				AD6007BC201B0BBB000191DE /* UIView+Function.m */,
+				BEE175A0207FA4EE0091287C /* UIScrollView+Function.h */,
+				BEE175A1207FA4EE0091287C /* UIScrollView+Function.m */,
 			);
 			path = ZLCategory;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				AD6007C5201B0BBB000191DE /* UITableView+Function.m in Sources */,
 				AD6007BD201B0BBB000191DE /* NSDate+Function.m in Sources */,
 				AD60077C201B08B5000191DE /* main.m in Sources */,
+				BEE175A2207FA4EE0091287C /* UIScrollView+Function.m in Sources */,
 				AD6007C0201B0BBB000191DE /* UIColor+Function.m in Sources */,
 				AD6007C2201B0BBB000191DE /* UINavigationController+Function.m in Sources */,
 				ADBF8F382074772E001E9DFF /* ZLMath.m in Sources */,
@@ -516,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZLCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czl.ZLCategory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,6 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ZLCategory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.czl.ZLCategory;
 				PRODUCT_NAME = "$(TARGET_NAME)";

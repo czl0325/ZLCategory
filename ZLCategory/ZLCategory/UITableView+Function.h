@@ -16,6 +16,8 @@
 //IOS11 tableview的通用设置
 - (void)commonSetTableView;
 
+- (void)adjustBehavior;
+
 //当UITableView没有数据的时候需要展示的内容
 - (void)tableViewDisplayWitMsg:(NSString *) message ifNecessaryForRowCount:(NSUInteger) rowCount;
 

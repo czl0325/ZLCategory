@@ -12,7 +12,7 @@
 @implementation UITableView (Function)
 
 - (BOOL)hideExtraCell {
-    return NO;
+    return self.hideExtraCell;
 }
 
 - (void)setHideExtraCell:(BOOL)hideExtraCell {
@@ -28,6 +28,9 @@
     self.estimatedSectionHeaderHeight = 0;
     self.estimatedSectionFooterHeight = 0;
     self.rowHeight=UITableViewAutomaticDimension;
+}
+
+- (void)adjustBehavior {
     if (@available(iOS 11.0, *)) {
         self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     } else {
