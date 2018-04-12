@@ -6,7 +6,7 @@
 //  Copyright © 2018年 czl. All rights reserved.
 //
 
-//版本  v0.0.2
+//版本  v0.0.5
 
 #import "NSDate+Function.h"
 #import "NSString+Function.h"
@@ -16,6 +16,8 @@
 #import "UISlider+Function.h"
 #import "UITableView+Function.h"
 #import "UIView+Function.h"
+#import "UIScrollView+Function.h"
+#import "ZLMath.h"
 #import "UITools.h"
 
 #define UIColorFromRGB(rgbValue)        [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
