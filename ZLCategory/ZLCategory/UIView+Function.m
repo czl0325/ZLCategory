@@ -272,21 +272,25 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center)
 }
 
 - (UIViewController*)viewController {
-    for (UIView* next = [self superview]; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController*)nextResponder;
+//    for (UIView* next = [self superview]; next; next = next.superview) {
+//        UIResponder* nextResponder = [next nextResponder];
+//        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+//            return (UIViewController*)nextResponder;
+//        }
+//    }
+//    return nil;
+    UIResponder *nexRes=[self nextResponder];
+    do {
+        //判读当前的响应者是否UIViewController
+        if ([nexRes isKindOfClass:[UIViewController class]]) {
+            //是否直接处理
+            return  (UIViewController*)nexRes;
+        }else{
+            //否则继续寻找
+            nexRes = [nexRes nextResponder];
         }
-    }
+    } while (nexRes!=nil);
     return nil;
-    /*
-     id object = [self nextResponder];
-     while (![object isKindOfClass:[UIViewController class]] &&
-     object != nil) {
-     object = [object nextResponder];
-     }
-     UIViewController *uc=(UIViewController*)object;
-     */
 }
 
 - (void)transitionWithType:(NSString *)type WithSubtype:(NSString *)subtype ForView:(UIView *)view {
