@@ -221,6 +221,42 @@ UIView* createView(UIColor* color) {
     return line;
 }
 
+UIViewController *myTopViewController(UIViewController *vc) {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        UINavigationController* v = (UINavigationController*)vc;
+        return myTopViewController(v.topViewController);
+    } else if ([vc isKindOfClass:[UITabBarController class]]) {
+        UITabBarController* v = (UITabBarController*)vc;
+        return myTopViewController(v.selectedViewController);
+    } else {
+        return vc;
+    }
+    return nil;
+}
+
+UIViewController *topViewController(void) {
+    UIViewController *resultVC;
+    resultVC = myTopViewController([UIApplication sharedApplication].keyWindow.rootViewController);
+    while (resultVC.presentedViewController) {
+        resultVC = myTopViewController(resultVC.presentingViewController);
+    }
+    return resultVC;
+}
+
+NSString* getAppName(void) {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+}
+
+NSString* getAppVersion(void) {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+}
+
+NSString* getAppBuild(void) {
+    return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+}
+
+
+
 
 
 

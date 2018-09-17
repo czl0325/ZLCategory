@@ -391,6 +391,20 @@ UIImage *launchImageWithType(NSString *type);
  * 获取app的图标
  ***/
 UIImage *appIcon(void);
+//创建一个线条
+UIView* createView(UIColor* color);
+
+//获取最上层的ViewController
+UIViewController *topViewController(void);
+
+//获取app名称
+NSString* getAppName(void);
+
+//获取app版本
+NSString* getAppVersion(void);
+
+//获取app的build版本
+NSString* getAppBuild(void);
 ```
 
 ## UIView+Function.h
