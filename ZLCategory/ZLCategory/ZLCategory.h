@@ -15,6 +15,8 @@
 #import "UINavigationController+Function.h"
 #import "UISlider+Function.h"
 #import "UITableView+Function.h"
+#import "UIButton+Function.h"
+#import "UIViewController+Function.h"
 #import "UIView+Function.h"
 #import "UIScrollView+Function.h"
 #import "ZLMath.h"
