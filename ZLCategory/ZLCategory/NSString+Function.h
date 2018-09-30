@@ -117,4 +117,7 @@
 //过滤获得的匹配信息的下标
 - (int)indexByValue:(NSString *)str;
 
+#pragma mark 金币大小写 --> 封装的方法
+- (NSString *)changetoBigMoney;
+
 @end
