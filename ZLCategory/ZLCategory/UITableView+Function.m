@@ -58,4 +58,17 @@
     }
 }
 
+- (void)tableViewDisplayWithImage:(NSString *) image
+           ifNecessaryForRowCount:(NSUInteger) rowCount {
+    if (rowCount == 0) {
+        UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:image]];
+        imageView.contentMode = UIViewContentModeCenter;
+        self.backgroundView = imageView;
+        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    } else {
+        self.backgroundView = nil;
+        self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+}
+
 @end

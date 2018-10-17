@@ -21,4 +21,7 @@
 //当UITableView没有数据的时候需要展示的内容
 - (void)tableViewDisplayWitMsg:(NSString *) message ifNecessaryForRowCount:(NSUInteger) rowCount;
 
+- (void)tableViewDisplayWithImage:(NSString *) image
+           ifNecessaryForRowCount:(NSUInteger) rowCount;
+
 @end
