@@ -120,4 +120,8 @@
 #pragma mark 金币大小写 --> 封装的方法
 - (NSString *)changetoBigMoney;
 
+- (NSString *)htmlForTextSmall;
+
+- (NSString *)htmlForImageFit;
+
 @end

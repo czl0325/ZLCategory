@@ -1211,4 +1211,31 @@ static NSString *replaceAll(NSString *s, NSDictionary *replacements) {
     return [prefix stringByAppendingString:suffix];
 }
 
+- (NSString *)htmlForTextSmall {
+    return [NSString stringWithFormat:@"<div style=\"text-align:justify; text-justify:inter-ideograph;\">%@",self];
+}
+
+- (NSString *)htmlForImageFit {
+    return [NSString stringWithFormat:@"<html> \n"
+            "<head> \n"
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'> \n"
+            "<style type=\"text/css\"> \n"
+            "body {font-size:20px;}\n"
+            "</style> \n"
+            "</head> \n"
+            "<body>"
+            "<script type='text/javascript'>"
+            "window.onload = function(){\n"
+            "var $img = document.getElementsByTagName('img');\n"
+            "for(var p in  $img){\n"
+            //"var httpP = \"http://webapi.houno.cn\"+$img[p].getAttribute(\"src\");"
+            //"$img[p].setAttribute(\"src\",httpP);"    // 这里发现拼接图片地址也能成功了。
+            "$img[p].style.width = '92%%';\n"
+            "$img[p].style.height ='auto'\n"
+            "}\n"
+            "}"
+            "</script>%@"
+            "</body>"
+            "</html>",self];
+}
 @end

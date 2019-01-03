@@ -523,4 +523,5 @@ static UIImage *animatedImageWithAnimatedGIFReleasingImageSource(CGImageSourceRe
     return newImage ;
 }
 
+
 @end

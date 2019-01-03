@@ -101,3 +101,16 @@ NSString* getAppVersion(void);
 //获取app的build版本
 NSString* getAppBuild(void);
 
+
+//生成二维码相关
+
+//调整二维码清晰度，添加水印图片
+UIImage *getHDImgWithCIImage(CIImage *img ,CGSize size ,UIImage *waterImg);
+
+//修改二维码颜色
+UIImage *changeColorWithQRCodeImg(UIImage *image ,NSUInteger red ,NSUInteger green, NSUInteger blue);
+
+void changeColorOnPixel(uint32_t *rgbImageBuf ,int pixelNum, NSUInteger red, NSUInteger green, NSUInteger blue);
+
+//拼接图片
+UIImage *spliceImg1(UIImage *img1 ,UIImage *img2, CGPoint location);

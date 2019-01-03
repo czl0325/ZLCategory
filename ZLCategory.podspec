@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZLCategory"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "ZLCategory"
   s.description  = <<-DESC
   						整合的一些常用的category类
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   #s.ios.deployment_target = "5.0"
   #s.osx.deployment_target = "10.7"
 
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/czl0325/ZLCategory.git", :tag => "#{s.version}" }
 
