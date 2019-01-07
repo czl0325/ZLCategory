@@ -27,6 +27,7 @@
 		ADBF8F382074772E001E9DFF /* ZLMath.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBF8F362074772D001E9DFF /* ZLMath.m */; };
 		BE02F63C211AEF20004DAB3E /* UIButton+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = BE02F63B211AEF20004DAB3E /* UIButton+Function.m */; };
 		BE0372F0209DB90A0058D4D7 /* UIViewController+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0372EF209DB90A0058D4D7 /* UIViewController+Function.m */; };
+		BEA06E0121E2F801009C7BDF /* UILabel+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA06E0021E2F801009C7BDF /* UILabel+Function.m */; };
 		BEE175A2207FA4EE0091287C /* UIScrollView+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE175A1207FA4EE0091287C /* UIScrollView+Function.m */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,8 @@
 		BE02F63B211AEF20004DAB3E /* UIButton+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Function.m"; sourceTree = "<group>"; };
 		BE0372EE209DB90A0058D4D7 /* UIViewController+Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Function.h"; sourceTree = "<group>"; };
 		BE0372EF209DB90A0058D4D7 /* UIViewController+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Function.m"; sourceTree = "<group>"; };
+		BEA06DFF21E2F801009C7BDF /* UILabel+Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Function.h"; sourceTree = "<group>"; };
+		BEA06E0021E2F801009C7BDF /* UILabel+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Function.m"; sourceTree = "<group>"; };
 		BEE175A0207FA4EE0091287C /* UIScrollView+Function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Function.h"; sourceTree = "<group>"; };
 		BEE175A1207FA4EE0091287C /* UIScrollView+Function.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Function.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +210,8 @@
 				BE0372EF209DB90A0058D4D7 /* UIViewController+Function.m */,
 				BE02F63A211AEF20004DAB3E /* UIButton+Function.h */,
 				BE02F63B211AEF20004DAB3E /* UIButton+Function.m */,
+				BEA06DFF21E2F801009C7BDF /* UILabel+Function.h */,
+				BEA06E0021E2F801009C7BDF /* UILabel+Function.m */,
 			);
 			path = ZLCategory;
 			sourceTree = "<group>";
@@ -283,7 +288,7 @@
 		AD600761201B08B5000191DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = czl;
 				TargetAttributes = {
 					AD600768201B08B5000191DE = {
@@ -368,6 +373,7 @@
 				BE0372F0209DB90A0058D4D7 /* UIViewController+Function.m in Sources */,
 				ADBF8F382074772E001E9DFF /* ZLMath.m in Sources */,
 				AD6007C7201B0BBB000191DE /* UITools.m in Sources */,
+				BEA06E0121E2F801009C7BDF /* UILabel+Function.m in Sources */,
 				AD60076E201B08B5000191DE /* AppDelegate.m in Sources */,
 				AD6007C1201B0BBB000191DE /* UIImage+Function.m in Sources */,
 			);
@@ -438,6 +444,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -445,6 +452,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -493,6 +501,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -500,6 +509,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
