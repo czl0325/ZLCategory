@@ -124,4 +124,7 @@
 
 - (NSString *)htmlForImageFit;
 
+//获取url的参数
+- (NSString *)getParamByName:(NSString *)name;
+
 @end

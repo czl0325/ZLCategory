@@ -19,6 +19,7 @@
 #import "UIViewController+Function.h"
 #import "UIView+Function.h"
 #import "UIScrollView+Function.h"
+#import "UILabel+Function.h"
 #import "ZLMath.h"
 #import "UITools.h"
 

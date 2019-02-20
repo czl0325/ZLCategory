@@ -1238,4 +1238,22 @@ static NSString *replaceAll(NSString *s, NSDictionary *replacements) {
             "</body>"
             "</html>",self];
 }
+
+- (NSString *)getParamByName:(NSString *)name {
+    NSError *error;
+    NSString *regTags=[[NSString alloc] initWithFormat:@"(^|&|\\?)+%@=+([^&]*)(&|$)", name];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regTags
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:&error];
+    
+    // 执行匹配的过程
+    NSArray *matches = [regex matchesInString:self
+                                      options:0
+                                        range:NSMakeRange(0, [self length])];
+    for (NSTextCheckingResult *match in matches) {
+        NSString *tagValue = [self substringWithRange:[match rangeAtIndex:2]];  // 分组2所对应的串
+        return tagValue;
+    }
+    return @"";
+}
 @end
