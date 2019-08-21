@@ -141,7 +141,7 @@ addTapGestureWithTarget             : 为UISlider添加单击事件
 #####  成员函数
 ```
 tableViewDisplayWitMsg              : 当UITableView没有数据的时候需要展示的内容
-commonSetTableView					        : IOS11中tableview的通用设置
+commonSetTableView					: IOS11中tableview的通用设置
 ```
 
 #####  成员变量
@@ -225,12 +225,12 @@ lp_explode                          : iew的爆炸效果
 
 #####  成员变量
 ```
-zl_contentInsets					          : 设置内边距
+zl_contentInsets					: 设置内边距
 ```
 
 * ### ZLMath相关
 ```
-distanceBetweenPoints 				      : 计算两个点之间的距离
-angleBetweenPoints					        : 两个点之间的角度
-angleBetweenLines					          : 两条线之间的角度
+distanceBetweenPoints 				: 计算两个点之间的距离
+angleBetweenPoints					: 两个点之间的角度
+angleBetweenLines					: 两条线之间的角度
 ```
