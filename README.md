@@ -48,7 +48,7 @@ dateByAddingMinutes                 : 某个时间点加几分钟
 dateBySubtractingMinutes            : 某个时间点减几分钟
 dateAtStartOfDay                    : 某一天的00：00：00
 compareCurrentTime                  : 对比当前时间
-getTimeIntervalSince1970Millisecond :获取自1970年的时间戳毫秒
+getTimeIntervalSince1970Millisecond : 获取自1970年的时间戳毫秒
 extractByDislodgeHour               : 移除日期的时分秒
 getDateFirstTime                    : 获取某天的00：00：00
 getDateLastTime                     : 获取某天的23：59：59
@@ -141,7 +141,7 @@ addTapGestureWithTarget             : 为UISlider添加单击事件
 #####  成员函数
 ```
 tableViewDisplayWitMsg              : 当UITableView没有数据的时候需要展示的内容
-commonSetTableView					: IOS11 tableview的通用设置
+commonSetTableView					: IOS11中tableview的通用设置
 ```
 
 #####  成员变量
