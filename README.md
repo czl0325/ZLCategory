@@ -1,7 +1,6 @@
 # ZLCategory
 整合一些常用的category类
 
- 
 支持cocoapod，
 可以使用 pod ZLCategory 来导入
 
@@ -11,20 +10,20 @@
 ```
 也可以按自己需要导入头文件
 
-# 文档：
+## APIs
 
-## NSDate+Function.h
-
+* ### NSDate 相关 -> [NSDate+Function.h][NSDate+Function.h]
 ```
-// Relative dates from the current date
-+ (NSDate *) dateTomorrow;
-+ (NSDate *) dateYesterday;
-+ (NSDate *) dateWithDaysFromNow: (NSUInteger) days;
-+ (NSDate *) dateWithDaysBeforeNow: (NSUInteger) days;
-+ (NSDate *) dateWithHoursFromNow: (NSUInteger) dHours;
-+ (NSDate *) dateWithHoursBeforeNow: (NSUInteger) dHours;
-+ (NSDate *) dateWithMinutesFromNow: (NSUInteger) dMinutes;
-+ (NSDate *) dateWithMinutesBeforeNow: (NSUInteger) dMinutes;
+dateTomorrow              : 获取明天
+dateYesterday           : 获取昨天
+dateWithDaysFromNow               : 某个时间点往后几天
+dateWithDaysBeforeNow                  : 某个时间点往前几天
+dateWithHoursFromNow         : 某个时间点往后几个小时
+dateWithHoursBeforeNow : 某个时间点往前几个小时
+dateWithMinutesFromNow: 某个时间点往后几分钟
+dateWithMinutesBeforeNow: 某个时间点往前几分钟
+```
+
 
 /***
  * 一些NSDate的比较函数
