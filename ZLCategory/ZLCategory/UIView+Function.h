@@ -67,11 +67,6 @@ CGRect  CGRectMoveToCenter(CGRect rect, CGPoint center);
 - (UIImage*) imageWithUIView;
 - (void)setBorderWithView:(kAddLineDirectionOption)direction borderColor:(UIColor *)color borderWidth:(CGFloat)width;
 
-/******
- 从xib来加载uiview
- ******/
-+ (instancetype)loadFromXib;
-
 /**
  *  uiview的爆炸效果
  **/

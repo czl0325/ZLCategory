@@ -347,14 +347,8 @@ CGRect CGRectMoveToCenter(CGRect rect, CGPoint center)
     }
 }
 
-+ (instancetype)loadFromXib {
-    return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil]lastObject];
-}
-
 /*****
- *
  *  UIView的爆炸效果相关代码
- *
  *****/
 float randomFloat()
 {
