@@ -13,74 +13,40 @@
 ## APIs
 
 * ### NSDate 相关 -> [NSDate+Function.h][NSDate+Function.h]
+
+#####  成员函数
 ```
-dateTomorrow              : 获取明天
-dateYesterday           : 获取昨天
-dateWithDaysFromNow               : 某个时间点往后几天
-dateWithDaysBeforeNow                  : 某个时间点往前几天
-dateWithHoursFromNow         : 某个时间点往后几个小时
-dateWithHoursBeforeNow : 某个时间点往前几个小时
-dateWithMinutesFromNow: 某个时间点往后几分钟
-dateWithMinutesBeforeNow: 某个时间点往前几分钟
-```
-
-
-/***
- * 一些NSDate的比较函数
- ***/
-- (BOOL) isEqualToDateIgnoringTime: (NSDate *) aDate;
-- (BOOL) isToday;
-- (BOOL) isTomorrow;
-- (BOOL) isYesterday;
-- (BOOL) isSameWeekAsDate: (NSDate *) aDate;
-- (BOOL) isThisWeek;
-- (BOOL) isNextWeek;
-- (BOOL) isLastWeek;
-- (BOOL) isSameYearAsDate: (NSDate *) aDate;
-- (BOOL) isThisYear;
-- (BOOL) isNextYear;
-- (BOOL) isLastYear;
-- (BOOL) isEarlierThanDate: (NSDate *) aDate;
-- (BOOL) isLaterThanDate: (NSDate *) aDate;
-
-// Adjusting dates
-- (NSDate *) dateByAddingDays: (NSInteger) dDays;
-- (NSDate *) dateBySubtractingDays: (NSInteger) dDays;
-- (NSDate *) dateByAddingHours: (NSInteger) dHours;
-- (NSDate *) dateBySubtractingHours: (NSInteger) dHours;
-- (NSDate *) dateByAddingMinutes: (NSInteger) dMinutes;
-- (NSDate *) dateBySubtractingMinutes: (NSInteger) dMinutes;
-- (NSDate *) dateAtStartOfDay;
-
-// Retrieving intervals
-- (NSInteger) minutesAfterDate: (NSDate *) aDate;
-- (NSInteger) minutesBeforeDate: (NSDate *) aDate;
-- (NSInteger) hoursAfterDate: (NSDate *) aDate;
-- (NSInteger) hoursBeforeDate: (NSDate *) aDate;
-- (NSInteger) daysAfterDate: (NSDate *) aDate;
-- (NSInteger) daysBeforeDate: (NSDate *) aDate;
-- (NSString *)compareCurrentTime;
-
-/***
- * 返回date的各个参数，年，月，日，时，分，秒（已经经过时区处理）
- ***/
-@property (readonly) NSInteger nearestHour;
-@property (readonly) NSInteger hour;
-@property (readonly) NSInteger minute;
-@property (readonly) NSInteger seconds;
-@property (readonly) NSInteger day;
-@property (readonly) NSInteger month;
-@property (readonly) NSInteger week;
-@property (readonly) NSInteger weekday;
-@property (readonly) NSInteger nthWeekday; // e.g. 2nd Tuesday of the month == 2
-@property (readonly) NSInteger year;
-
-/**
- *  获取自1970年的时间戳毫秒
- *
- *  @return 毫秒时间戳
- */
--(long long)getTimeIntervalSince1970Millisecond;
+dateTomorrow                : 获取明天
+dateYesterday               : 获取昨天
+dateWithDaysFromNow         : 某个时间点往后几天
+dateWithDaysBeforeNow       : 某个时间点往前几天
+dateWithHoursFromNow        : 某个时间点往后几个小时
+dateWithHoursBeforeNow      : 某个时间点往前几个小时
+dateWithMinutesFromNow      : 某个时间点往后几分钟
+dateWithMinutesBeforeNow    : 某个时间点往前几分钟
+isEqualToDateIgnoringTime   : 日期相等，忽略时分秒
+isToday                     : 是否今天
+isTomorrow                  : 是否明天
+isYesterday                 : 是否昨天
+isSameWeekAsDate            : 是否同一周
+isThisWeek                  : 是否本周
+isNextWeek                  : 是否下周
+isLastWeek                  : 是否上周
+isSameYearAsDate            : 是否同一年
+isThisYear                  : 是否今年
+isNextYear                  : 是否明年
+isLastYear                  : 是否前一年
+isEarlierThanDate           : 是否比某个日期早
+isLaterThanDate                     : 是否比某个日期晚
+dateByAddingDays                    : 某个日期加几天
+dateBySubtractingDays               : 某个日期减几天
+dateByAddingHours                   : 某个时间点加几个小时
+dateBySubtractingHours              : 某个时间点减几个小时
+dateByAddingMinutes                 : 某个时间点加几分钟
+dateBySubtractingMinutes            : 某个时间点减几分钟
+dateAtStartOfDay                    : 某一天的00：00：00
+compareCurrentTime                  : 对比当前时间
+getTimeIntervalSince1970Millisecond :获取自1970年的时间戳毫秒
 -(NSDate *)extractByDislodgeHour;
 -(NSDate* )getDateFirstTime;
 -(NSDate* )getDateLastTime;
@@ -89,6 +55,24 @@ dateWithMinutesBeforeNow: 某个时间点往前几分钟
  * 返回YES 或者 NO
  ***/
 - (BOOL)isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
+```
+
+
+#####  成员变量
+
+```
+nearestHour;
+hour;
+minute;
+seconds;
+day;
+month;
+week;
+weekday;
+nthWeekday; // e.g. 2nd Tuesday of the month == 2
+year;
+
+
 ```
 
 ## NSString+Function.h
