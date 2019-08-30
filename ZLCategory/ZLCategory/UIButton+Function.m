@@ -78,6 +78,8 @@
     {
         self.countDownFormat = format;
     }
+    self.userInteractionEnabled = NO;
+    self.enabled = NO;
     self.normalTitle = self.titleLabel.text;
     __block NSInteger timeOut = duration; //倒计时时间
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -147,6 +149,7 @@
     // 设置界面的按钮显示 根据自己需求设置
     [self setTitle:self.normalTitle forState:UIControlStateNormal];
     self.userInteractionEnabled = YES;
+    self.enabled = YES;
     if (self.timeStoppedCallback) { self.timeStoppedCallback(); }
 //    dispatch_async(dispatch_get_main_queue(), ^{
 //        BAKit_StrongSelf
