@@ -51,10 +51,10 @@
         [messageLabel sizeToFit];
         
         self.backgroundView = messageLabel;
-        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        //self.separatorStyle = UITableViewCellSeparatorStyleNone;
     } else {
         self.backgroundView = nil;
-        self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        //self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
 }
 
@@ -64,10 +64,10 @@
         UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:image]];
         imageView.contentMode = UIViewContentModeCenter;
         self.backgroundView = imageView;
-        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+        //self.separatorStyle = UITableViewCellSeparatorStyleNone;
     } else {
         self.backgroundView = nil;
-        self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        //self.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
 }
 

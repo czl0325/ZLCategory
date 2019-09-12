@@ -74,12 +74,6 @@
 @property (readonly) NSInteger nthWeekday; // e.g. 2nd Tuesday of the month == 2
 @property (readonly) NSInteger year;
 
-/**
- *  获取自1970年的时间戳毫秒
- *
- *  @return 毫秒时间戳
- */
--(long long)getTimeIntervalSince1970Millisecond;
 -(NSDate *)extractByDislodgeHour;
 -(NSDate* )getDateFirstTime;
 -(NSDate* )getDateLastTime;

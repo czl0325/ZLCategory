@@ -345,11 +345,6 @@
     return  result;
 }
 
--(long long)getTimeIntervalSince1970Millisecond {
-    long long timeInterval = (long long)[self timeIntervalSince1970];
-    return timeInterval*1000;
-}
-
 - (NSDate *)extractByDislodgeHour {
     NSTimeInterval interval = [self timeIntervalSince1970];
     int daySeconds = 24 * 60 * 60;
@@ -375,4 +370,14 @@
     
     return YES;
 }
+
+- (NSTimeInterval)getTimeInterval:(NSString *)starTime endTime:(NSString *)endTime{
+    NSDateFormatter* formater = [[NSDateFormatter alloc] init];
+    [formater setDateFormat:@"mm:ss"];//根据自己的需求定义格式
+    NSDate* startDate = [formater dateFromString:starTime];
+    NSDate* endDate = [formater dateFromString:endTime];
+    NSTimeInterval time = [endDate timeIntervalSinceDate:startDate];
+    return time;
+}
+
 @end

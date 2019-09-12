@@ -10,6 +10,13 @@
 
 typedef void (^BAKit_BAButtonCountDownBlock)(NSInteger currentTime);
 
+typedef NS_ENUM(NSUInteger, ZLButtonEdgeInsetsStyle) {
+    ZLButtonEdgeInsetsStyleTop, // image在上，label在下
+    ZLButtonEdgeInsetsStyleLeft, // image在左，label在右
+    ZLButtonEdgeInsetsStyleBottom, // image在下，label在上
+    ZLButtonEdgeInsetsStyleRight // image在右，label在左
+};
+
 @interface UIButton (Function)
 
 @property (nonatomic, copy) void(^timeStoppedCallback)(void);
@@ -20,8 +27,8 @@ typedef void (^BAKit_BAButtonCountDownBlock)(NSInteger currentTime);
  @param duration 倒计时时间
  @param format 可选，传nil默认为 @"%zd秒"
  */
-- (void)ba_countDownWithTimeInterval:(NSTimeInterval)duration
-                     countDownFormat:(NSString *)format;
+- (void)countDownWithTimeInterval:(NSTimeInterval)duration
+                  countDownFormat:(NSString *)format;
 
 /**
  倒计时：返回当前时间，可以自定义 title 和 image，具体使用看 demo
@@ -29,12 +36,23 @@ typedef void (^BAKit_BAButtonCountDownBlock)(NSInteger currentTime);
  @param duration 倒计时时间
  @param block 返回当前时间
  */
-- (void)ba_countDownCustomWithTimeInterval:(NSTimeInterval)duration
-                                     block:(BAKit_BAButtonCountDownBlock)block;
+- (void)countDownCustomWithTimeInterval:(NSTimeInterval)duration
+                                  block:(BAKit_BAButtonCountDownBlock)block;
 
 /**
  * 倒计时：结束，取消倒计时
  */
-- (void)ba_cancelTimer;
+- (void)cancelTimer;
+
+- (void)layoutButtonWithEdgeInsetsStyle:(ZLButtonEdgeInsetsStyle)style;
+
+- (void)layoutButtonWithEdgeInsetsStyle:(ZLButtonEdgeInsetsStyle)style
+                        imageTitleSpace:(CGFloat)space;
+
+//small 缩小的尺寸
+- (void)layoutButtonWithEdgeInsetsStyle:(ZLButtonEdgeInsetsStyle)style
+                        imageTitleSpace:(CGFloat)space
+                                  small:(CGFloat)smallSize;
+
 
 @end

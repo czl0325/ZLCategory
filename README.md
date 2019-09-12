@@ -48,7 +48,6 @@ dateByAddingMinutes                 : 某个时间点加几分钟
 dateBySubtractingMinutes            : 某个时间点减几分钟
 dateAtStartOfDay                    : 某一天的00：00：00
 compareCurrentTime                  : 对比当前时间
-getTimeIntervalSince1970Millisecond : 获取自1970年的时间戳毫秒
 extractByDislodgeHour               : 移除日期的时分秒
 getDateFirstTime                    : 获取某天的00：00：00
 getDateLastTime                     : 获取某天的23：59：59
@@ -140,7 +139,8 @@ addTapGestureWithTarget             : 为UISlider添加单击事件
 
 #####  成员函数
 ```
-tableViewDisplayWitMsg              : 当UITableView没有数据的时候需要展示的内容
+tableViewDisplayWitMsg              : 当UITableView无数据时展示的文字
+tableViewDisplayWithImage           : 当UITableView无数据时展示的图片
 commonSetTableView					: IOS11中tableview的通用设置
 ```
 
@@ -152,9 +152,12 @@ hideExtraCell                       : 是否隐藏多余的cell
 * ### UIButton 相关 -> UIButton+Function.h 
 
 ```
-ba_countDownWithTimeInterval        : 倒计时
-ba_countDownCustomWithTimeInterval  : 倒计时返回当前时间，可以自定义 title 和 image
-ba_cancelTimer                      : 倒计时结束，取消倒计时
+countDownWithTimeInterval           : 倒计时
+countDownCustomWithTimeInterval     : 倒计时返回当前时间，可以自定义 title 和 image
+cancelTimer                         : 倒计时结束，取消倒计时
+layoutButtonWithEdgeInsetsStyle     : 设置button样式  图上文下  图下文上  图左文右  图右文左
+layoutButtonWithEdgeInsetsStyle     : 设置button样式和图文之间的间距
+layoutButtonWithEdgeInsetsStyle     : 设置button样式，图文间距，图片缩放大小（仅横向可用）
 ```
 
 
