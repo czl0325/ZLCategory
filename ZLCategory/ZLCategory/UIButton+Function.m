@@ -153,7 +153,7 @@
 
 - (void)layoutButtonWithEdgeInsetsStyle:(ZLButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space {
-    [self layoutButtonWithEdgeInsetsStyle:style imageTitleSpace:0 small:0];
+    [self layoutButtonWithEdgeInsetsStyle:style imageTitleSpace:space small:0];
 }
 
 - (void)layoutButtonWithEdgeInsetsStyle:(ZLButtonEdgeInsetsStyle)style
