@@ -97,6 +97,9 @@ isPureInt                           : 是否为整形
 isPureFloat                         : 是否为浮点型
 stringCutout                        : 截取从value1到value2之间的字符串
 indexByValue                        : 获得的匹配信息的下标
+getParamByName                      : 根据key获取url的参数
+getSubStrCount                      : 获取字符出现的次数
+getSubStrLocals                     : 获取字符出现的位置的数组
 ```
 
 * ### UIColor 相关 -> UIColor+Function.h

@@ -127,4 +127,10 @@
 //获取url的参数
 - (NSString *)getParamByName:(NSString *)name;
 
+//获取字符出现的次数
+- (NSInteger)getSubStrCount:(NSString *)subStr;
+
+//获取字符出现的位置数组
+- (NSMutableArray *)getSubStrLocals:(NSString *)subStr;
+
 @end

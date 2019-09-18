@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZLCategory"
-  s.version      = "0.1.6.1"
+  s.version      = "0.1.7"
   s.summary      = "ZLCategory"
   s.description  = <<-DESC
   						整合的一些常用的category类

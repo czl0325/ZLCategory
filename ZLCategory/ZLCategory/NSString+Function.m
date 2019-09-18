@@ -1256,4 +1256,25 @@ static NSString *replaceAll(NSString *s, NSDictionary *replacements) {
     }
     return @"";
 }
+
+- (NSInteger)getSubStrCount:(NSString *)subStr {
+    NSInteger subStrCount = [self length] - [[self stringByReplacingOccurrencesOfString:subStr withString:@""] length];
+    return subStrCount / [subStr length];
+}
+
+- (NSMutableArray *)getSubStrLocals:(NSString *)subStr {
+    NSArray * separatedStrArr = [self componentsSeparatedByString:subStr];
+    NSMutableArray * locMuArr = [[NSMutableArray alloc]init];
+    
+    NSInteger index = 0;
+    for (NSInteger i = 0; i<separatedStrArr.count-1; i++) {
+        NSString * separatedStr = separatedStrArr[i];
+        index = index + separatedStr.length;
+        NSNumber * loc_num = [NSNumber numberWithInteger:index];
+        [locMuArr addObject:loc_num];
+        index = index+subStr.length;
+    }
+    return locMuArr;
+}
+
 @end
