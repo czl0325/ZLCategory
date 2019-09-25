@@ -46,6 +46,7 @@
         
         messageLabel.text = message;
         messageLabel.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+        messageLabel.numberOfLines = 0;
         messageLabel.textColor = [UIColor lightGrayColor];
         messageLabel.textAlignment = NSTextAlignmentCenter;
         [messageLabel sizeToFit];

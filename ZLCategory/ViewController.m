@@ -20,6 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"转化时间1-----%@",formatStringToDate(@"2017-01-01"));
     NSLog(@"转化时间2-----%@",formatDateToStringALL([NSDate date]));
+    NSLog(@"对比字符串%d",[@"abc" isEqualToStringIgnoreCase:@"ABC"]);
     
     UIView* view = [UIView new];
     view.left = 100;

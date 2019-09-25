@@ -100,6 +100,7 @@ indexByValue                        : 获得的匹配信息的下标
 getParamByName                      : 根据key获取url的参数
 getSubStrCount                      : 获取字符出现的次数
 getSubStrLocals                     : 获取字符出现的位置的数组
+isEqualToStringIgnoreCase           : 对比字符串忽略大小写
 ```
 
 * ### UIColor 相关 -> UIColor+Function.h
@@ -239,4 +240,17 @@ zl_contentInsets					: 设置内边距
 distanceBetweenPoints 				: 计算两个点之间的距离
 angleBetweenPoints					: 两个点之间的角度
 angleBetweenLines					: 两条线之间的角度
+```
+
+* ### 通用的define
+```
+UIColorFromRGB                      : 16进制值转UIColor
+RandomColor                         : 返回一个随机颜色
+SCREEN_MAX_WIDTH                    : 屏幕宽度
+SCREEN_MAX_HEIGHT                   : 屏幕高度
+WeakSelf                            : 弱引用
+HomePath                            : App路径
+DocumentsPath                       : App Documents路径
+CachePath                           : App Cache路径
+TempPath                            : App Temp路径
 ```

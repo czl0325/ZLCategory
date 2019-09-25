@@ -32,4 +32,4 @@
 #define HomePath        NSHomeDirectory()
 #define DocumentsPath   ((NSString*)(NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]))
 #define CachePath       ((NSString*)(NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]))
-#define tempPath        NSTemporaryDirectory();
+#define TempPath        NSTemporaryDirectory();
