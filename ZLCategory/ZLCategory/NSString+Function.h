@@ -88,4 +88,8 @@
 //对比字符串不区分大小写
 - (BOOL)isEqualToStringIgnoreCase:(NSString *)aString;
 
+//HTML适配图片文字
+- (NSString *)adaptWebViewForHtml:(NSString *) htmlStr;
+- (NSString *)adaptWebViewForHtml:(NSString *) htmlStr title: (NSString*) title;
+
 @end
