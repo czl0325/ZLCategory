@@ -394,3 +394,32 @@ UIImage *spliceImg1(UIImage *img1 ,UIImage *img2, CGPoint location) {
     
     return newPic;
 }
+
+void showCustomAlert(NSString* title, NSString* message) {
+  showCustomAlertWithAlign(title, message, NSTextAlignmentCenter);
+}
+
+void showCustomAlertWithAlign(NSString* title, NSString* message, NSTextAlignment align) {
+  UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+  UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleCancel handler:nil];
+  [alert addAction:conform];
+  if (align != NSTextAlignmentCenter) {
+    UIView *subView1 = alert.view.subviews[0];
+    UIView *subView2 = subView1.subviews[0];
+    UIView *subView3 = subView2.subviews[0];
+    UIView *subView4 = subView3.subviews[0];
+    UIView *subView5 = subView4.subviews[0];
+    UILabel *tvMessage = subView5.subviews[2];
+    tvMessage.textAlignment = align;
+  }
+  [topViewController() presentViewController:alert animated:YES completion:nil];
+}
+
+void showInteractionAlert(NSString* title, NSString* message, ZLAlertActionBlock confirmAction, ZLAlertActionBlock cancelAction) {
+  UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+  UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:confirmAction];
+  UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:cancelAction];
+  [alert addAction:conform];
+  [alert addAction:cancel];
+  [topViewController() presentViewController:alert animated:YES completion:nil];
+}

@@ -188,6 +188,9 @@ topViewController                   : 获取最上层的ViewController
 getAppName                          : 获取app名称
 getAppVersion                       : 获取app版本
 getAppBuild                         : 获取app的build版本   
+showCustomAlert						: 展示普通的alert
+showCustomAlertWithAlign			: 展示普通的alert，带文字居左或居右
+showInteractionAlert				: 展示可交互的alert
 ```
 
 * ### UIView 相关 -> UIView+Function.h

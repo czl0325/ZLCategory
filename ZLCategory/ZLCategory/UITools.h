@@ -114,3 +114,11 @@ void changeColorOnPixel(uint32_t *rgbImageBuf ,int pixelNum, NSUInteger red, NSU
 
 //拼接图片
 UIImage *spliceImg1(UIImage *img1 ,UIImage *img2, CGPoint location);
+
+//展示普通alert
+void showCustomAlert(NSString* title, NSString* message);
+void showCustomAlertWithAlign(NSString* title, NSString* message, NSTextAlignment align);
+
+//展示可交互alert
+typedef void (^ZLAlertActionBlock)(UIAlertAction *action);
+void showInteractionAlert(NSString* title, NSString* message, ZLAlertActionBlock confirmAction, ZLAlertActionBlock cancelAction);
