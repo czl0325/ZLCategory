@@ -19,7 +19,7 @@ pod ZLCategory
 #####  成员函数
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |dateTomorrow                        | 获取明天|
 |dateYesterday                       | 获取昨天|
 |dateWithDaysFromNow                 | 某个时间点往后几天|
@@ -59,7 +59,7 @@ pod ZLCategory
 #####  成员变量
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |nearestHour                         | 小时|
 |hour                                | 小时|
 |minute                              | 分|
@@ -77,7 +77,7 @@ pod ZLCategory
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |aes128_encrypt                      | AES加密| 
 |aes128_decrypt                      | AES解密| 
 |getTextWidthfont                    | 获取到文本的宽度 | 
@@ -111,7 +111,7 @@ pod ZLCategory
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |colorWithRed                        | 通过red，green，blue创建颜色，无需除以255| 
 |colorWithHexString                  | 16进制转颜色| 
 
@@ -120,7 +120,7 @@ pod ZLCategory
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |hasAlpha                            | 图片是否有alpha层| 
 |imageWithAlpha                      | 返回一个给定图像的副本，如果还没有一个alpha通道，就添加一个alpha通道。| 
 |transparentBorderImage              | 返回一个图像的拷贝，它的边缘有一个透明的边界。如果图像没有alpha层，就会添加一个图层。| 
@@ -139,7 +139,7 @@ pod ZLCategory
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 popToViewController                 | 回退到指定页面| 
 
 
@@ -147,7 +147,7 @@ popToViewController                 | 回退到指定页面|
 * ### UISlider 相关 -> UISlider+Function.h
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | ---- |
 addTapGestureWithTarget             | 为UISlider添加单击事件| 
 
 
@@ -156,7 +156,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 #####  成员函数
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |tableViewDisplayWitMsg              | 当UITableView无数据时展示的文字| 
 |tableViewDisplayWithImage           | 当UITableView无数据时展示的图片| 
 |commonSetTableView					| IOS11中tableview的通用设置| 
@@ -165,7 +165,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 #####  成员变量
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |hideExtraCell                       | 是否隐藏多余的cell| 
 
 
@@ -173,7 +173,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |countDownWithTimeInterval           | 倒计时| 
 |countDownCustomWithTimeInterval     | 倒计时返回当前时间，可以自定义 title 和 image| 
 |cancelTimer                         | 倒计时结束，取消倒计时| 
@@ -187,7 +187,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |formatDateToString                  | NSDate类型转化成NSString("2018-01-01")| 
 |formatDateToStringALL               | NSDate类型转化成NSString("2018-01-01 00|00|00")| 
 |formatDateToStringALLEx             | NSDate类型转化成NSString("2018-01-01 00|00|00.000")| 
@@ -219,7 +219,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 |origin                              | 左上点| 
 |size                                | 大小| 
 |bottomLeft                          | 左下点| 
@@ -243,7 +243,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 #####  成员函数
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 | moveBy                              | 移动| 
 | scaleBy                             | 缩放| 
 | fitInSize                           | 按比例缩小| 
@@ -260,14 +260,14 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 #####  成员变量
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 | zl_contentInsets					|  设置内边距| 
 
 
 * ### ZLMath相关
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 | distanceBetweenPoints 				| 计算两个点之间的距离| 
 | angleBetweenPoints					| 两个点之间的角度| 
 | angleBetweenLines					| 两条线之间的角度| 
@@ -276,7 +276,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 * ### 通用的define
 
 | 函数名 | 作用 |
-| :---: | :---: |
+| :---: | --- |
 | UIColorFromRGB                      | 16进制值转UIColor| 
 | RandomColor                         | 返回一个随机颜色| 
 | SCREEN_MAX_WIDTH                    | 屏幕宽度| 
