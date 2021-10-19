@@ -83,7 +83,7 @@ pod ZLCategory
 |getTextWidthfont                    | 获取到文本的宽度 | 
 |getTextHeightfont                   | 获取文本的高度| 
 |flattenHTML                         | 去掉HTML标签| 
-|emoveWhitespaceAndNewlinewithboolNewLine| 去掉内容前面的空格和回车 或者去掉空格| 
+|removeWhitespaceAndNewlinewithboolNewLine| 去掉内容前面的空格和回车 或者去掉空格| 
 |md5Hash                             | md5加密| 
 |sha1Hash                            | sha1加密| 
 |sha256                              | sha256加密| 
@@ -189,12 +189,12 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 | 函数名 | 作用 |
 | :---: | --- |
 |formatDateToString                  | NSDate类型转化成NSString("2018-01-01")| 
-|formatDateToStringALL               | NSDate类型转化成NSString("2018-01-01 00|00|00")| 
-|formatDateToStringALLEx             | NSDate类型转化成NSString("2018-01-01 00|00|00.000")| 
+|formatDateToStringALL               | NSDate类型转化成NSString("2018-01-01 00:00:00")| 
+|formatDateToStringALLEx             | NSDate类型转化成NSString("2018-01-01 00:00:00.000")| 
 |formatStringToDate                  | NSString类型转化成NSDate("2018-01-01")| 
-|formatStringToDateEx                | NSString类型转化成NSDate("2018-01-01 00|00|00")| 
-|formatStringToDateMilli             | NSString类型转化成NSDate("2018-01-01 00|00|00.000")| 
-|is12Hours(void)                     | 判断系统是12小时制还是24小时制| 
+|formatStringToDateEx                | NSString类型转化成NSDate("2018-01-01 00:00:0")| 
+|formatStringToDateMilli             | NSString类型转化成NSDate("2018-01-01 00:00:00.000")| 
+|is12Hours                    | 判断系统是12小时制还是24小时制| 
 |genRandomString                     | 根据长度返回一串随机的字符串| 
 |exChangeOut                         | view的消失动画| 
 |isSameDay                           | 判断是否是同一天| 
@@ -236,7 +236,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 |ttScreenX                           | 在最顶层布局x| 
 |ttScreenY                           | 在最顶层布局y| 
 |screenViewX                         | 在屏幕x| 
-|screenViewY                         | 在屏幕x| 
+|screenViewY                         | 在屏幕y| 
 |screenFrame                         | 在屏幕frame| 
 
 
@@ -252,7 +252,7 @@ addTapGestureWithTarget             | 为UISlider添加单击事件|
 | transitionWithType                  | 组合动画| 
 | imageWithUIView                     | 将任意uiview转化成uiimage| 
 | setBorderWithView                   | 给view某个边添加border| 
-| lp_explode                          | iew的爆炸效果| 
+| lp_explode                          | view的爆炸效果| 
 
 
 * ### UILabel 相关 -> UILabel+Function.h
